@@ -83,7 +83,7 @@ public class PlayerHealth : MonoBehaviour
 		isDead = true;
 		
 		// Turn off any remaining shooting effects.
-//		playerShooting.DisableEffects ();
+		playerShooting.DisableEffects ();
 		
 		// Tell the animator that the player is dead.
 		anim.SetTrigger ("Dead");
@@ -94,6 +94,6 @@ public class PlayerHealth : MonoBehaviour
 		
 		// Turn off the movement and shooting scripts.
 		playerMovement.enabled = false;
-//		playerShooting.enabled = false;
+		playerShooting.enabled = false;
 	}       
 }
